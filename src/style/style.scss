@@ -1,12 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,600,700');
 
+$cubicTransitions: cubic-bezier(.65,.81,.5,.14);
+$redhot: #e20a0a;
+$blueSnow: #0a81e2;
+
 body {
-  background: #e20a0a;
-  color: white;
+  background: $redhot!important;
   font-size: 20px;
-  font-family: 'Fira Sans',sans-serif;
+  font-family: 'Fira Sans',sans-serif!important;
+  transition: all .5s $cubicTransitions;
+}
+
+.bg {
+  background: $blueSnow!important;
 }
 
 h1,h2,h3 {
-  text-transform: uppercase;
+  text-transform: uppercase!important;
+  font-weight: bold!important
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.intro {
+  color: #333!important;
+  font-size: 2rem!important;
+  transition: all .3s $cubicTransitions;
+}
+
+.textLight {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 5rem!important;
+   color: white!important;
 }
